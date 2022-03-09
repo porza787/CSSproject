@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex: 1;
     margin: 0;
     min-height: 100vh;
@@ -9,9 +8,13 @@ body {
 
 .header {
     display: flex;
-    height: 50px;
-    background: black;
-    color: white;
+    flex: 0 0 auto;
+    height: 70px;
+    background: white;
+    color: black;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 900;
 }
 
 .top {
@@ -47,4 +50,24 @@ body {
     height: 50px;
     background: lightgray;
     color: black;
+}
+
+.logo {
+    display: flex;
+    height: 50px;
+    padding: 0 20px;
+}
+
+ul {
+    display: flex;
+    margin-left: auto;
+    padding: 0 20px;
+    gap: 10px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+   color: black; 
 }
