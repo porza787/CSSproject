@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    justify-content: space-between;
     margin: 0;
     min-height: 100vh;
 }
@@ -10,46 +10,82 @@ body {
     display: flex;
     flex: 0 0 auto;
     height: 70px;
-    background: white;
+    background: lightgray;
     color: black;
     align-items: center;
     font-size: 32px;
     font-weight: 900;
 }
 
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .top {
     display: flex;
-    height: 50px;
+    flex: 0 0 auto;
     background: lightgray;
     color: black;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .info {
     display: flex;
-    height: 50px;
-    background: black;
-    color: white;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    background: white;
+    color: black;
+    height: 300px;
 }
 
 .quote {
     display: flex;
-    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
     background: lightgray;
     color: black;
+    height: 300px;
+}
+
+.quote-a {
+    margin: 100px;
 }
 
 .bottom {
     display: flex;
-    height: 50px;
-    background: black;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
     color: white;
+    height: 300px;
+}
+
+.bottom-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-color: black;
+    width: 700px;
+    padding: 10px 35px;
 }
 
 .footer {
     display: flex;
+    flex: 0 0 auto;
     height: 50px;
     background: lightgray;
     color: black;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -71,3 +107,4 @@ a {
    text-decoration: none;
    color: black; 
 }
+
